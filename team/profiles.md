@@ -31,7 +31,7 @@ Guransh is an accomplished backend engineer and AI systems architect with a prov
 
 ## Shahbaz Singh
 
-<img src="shahbaz-headshot.png" alt="Shahbaz Singh" width="160" />
+<img src="shahbaz-headshot.png" alt="Shahbaz Nanda" width="160" />
 
 ### Infrastructure & DevOps Specialist
 
