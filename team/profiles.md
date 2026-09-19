@@ -1,9 +1,5 @@
 # VIN-DCSIL Team
 
-## Meet the Team
-
----
-
 ## Guransh Singh
 
 <img src="guransh-headshot.png" alt="Guransh Singh" width="160" />
