@@ -7,4 +7,4 @@ The template used for this doc: https://github.com/dcsil/Team-Repo-Template
 
 # Authors
 - Guransh Singh - [GitHub](https://github.com/SGuransh)
-- Shahbax Singh Nanda- [GitHub](https://github.com/shahbaz-singh)
+- Shahbaz Singh Nanda- [GitHub](https://github.com/shahbaz-singh)
