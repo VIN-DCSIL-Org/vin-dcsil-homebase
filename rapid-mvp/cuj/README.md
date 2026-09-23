@@ -11,3 +11,5 @@ npm run dev
 uv sync
 uv run fastapi dev app/main.py
 ```
+
+3. To start the app(Can be on some other port: Check the output for npm run dev): http://localhost:5173/
