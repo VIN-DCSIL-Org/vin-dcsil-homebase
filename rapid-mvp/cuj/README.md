@@ -1,5 +1,8 @@
 Link to the Repository: https://github.com/VIN-DCSIL-Org/team-randomizer 
 
+# Pre-requisites
+You need uv and node(v22+)
+
 # Local Setup to run the application
 1. Run the following commands in the my-react-app
 ```
