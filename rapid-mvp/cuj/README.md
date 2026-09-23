@@ -1,0 +1,13 @@
+Link to the Repository: https://github.com/VIN-DCSIL-Org/team-randomizer 
+
+# Local Setup to run the application
+1. Run the following commands in the my-react-app
+```
+npm install
+npm run dev
+```
+2. In another terminal, run the following commands in the backend folder
+```
+uv sync
+uv run fastapi dev app/main.py
+```
