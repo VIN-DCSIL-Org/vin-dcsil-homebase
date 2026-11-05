@@ -1,0 +1,13 @@
+# Demo 2 — Architectural Rationale
+
+Demo 2 expands the Demo 1 remote coding workspace into a connected assessment platform MVP. The central decision was to preserve the browser-based remote execution experience while adding the product loop around it: hiring managers create or select assessments, candidates receive assignments, candidates complete coding or system-design work, AI interactions provide supplementary signals, and managers review results.
+
+The system is a React and TypeScript browser application backed by a Node.js HTTP/WebSocket server. HTTP APIs handle assignment and system-design data, while WebSockets support the interactive terminal experience. SSH/SFTP connects the application to a remote Linux or EC2 environment for file browsing, saving, Python execution, and terminal access. Monaco provides the coding surface. System-design assessments use Markdown instructions, Excalidraw, an AWS service icon palette, autosave, and read-only review after submission.
+
+The architecture deliberately supports two assessment modes. Coding assessments validate the original execution foundation and can invoke Terraform tests against a local Moto AWS emulator. System-design assessments extend the product beyond code execution by capturing visual architecture reasoning and AI follow-up conversation. The AWS console and resource inspection path make emulated cloud behavior visible without requiring every test to mutate live infrastructure.
+
+Alternatives considered included keeping the Demo 1 IDE as a standalone tool, building only a coding workflow, or implementing a full production identity and execution platform before testing product fit. A standalone IDE would not test the hiring value proposition. Coding-only would leave the system-design opportunity untested. Production controls are necessary, but building all of them before validating the connected assessment loop would delay learning. The MVP therefore prioritizes connected behavior while explicitly documenting security and reliability debt.
+
+The main debt is consequential: authentication is lightweight, remote execution needs stronger isolation and quotas, persistence and recovery need hardening, and AI ratings are not automatic hiring decisions. Multi-tenant authorization, concurrency, observability, deployment validation, and reviewer controls remain future work. These are limitations of the release, not reasons to imply production readiness.
+
+The architectural direction is therefore a staged platform strategy: preserve the low-friction candidate experience, measure the complete CUJs, and use that evidence to guide hardening before scale.
